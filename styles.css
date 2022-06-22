@@ -1,0 +1,175 @@
+:root {
+  --clr-violet: hsl(257, 40%, 49%);
+  --clr-soft-magenta: hsl(300, 69%, 71%);
+  --ff: 'Poppins',sans-serif;
+  --fa-style-family: "Font Awesome 6 Pro";
+  --fa-border-color: white;
+  --fa-border-radius: 100%;
+  --fa-border-clr-hover:hsl(300, 69%, 71%);
+  --fa-border-width:1rem;
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html, body {
+  font-family: var(--ff);
+  background-position: left top, bottom right;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--clr-violet);
+  margin: auto;
+  line-height: 1.5;
+}
+
+body{
+  background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+h1,
+p {
+
+  padding:0;
+  width:75%;
+  color:white;
+}
+
+h1{
+  margin-top: 2rem;
+}
+
+img{
+  margin:3rem 0 0 3rem;
+  width:200px;
+}
+
+i {
+  vertical-align: middle;
+}
+
+.container{
+  display:flex;
+  flex-direction: row;
+  margin:3rem;
+}
+
+
+.text{
+  margin-left: 5rem;
+}
+
+.mockups{
+  width:60%;
+  margin:auto;
+}
+
+.btn{
+  border-radius: 100px;
+  border-color:white;
+  padding:10px 40px;
+  color:var(--clr-violet);
+}
+
+.btn:hover{
+  cursor:pointer;
+  background-color:var(--clr-soft-magenta);
+  border-color:var(--clr-soft-magenta);
+  color:white;
+}
+
+.bottom{
+  display:flex;
+  flex-direction: row-reverse;
+  margin-right: 7rem;
+}
+
+.fa-brands {
+  border-width:var(--fa-border-width);
+  padding:0.5rem;
+  border-color:white ;
+  border-radius: var(--fa-border-radius);
+  font-size: 1.5rem;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram{
+  color:var(--fa-border-color);
+}
+
+
+.fa-brands:hover{
+  cursor:pointer;
+  color:var(--fa-border-clr-hover);
+}
+
+
+/* mobile */
+@media (max-width:974px){
+  body{
+    background-image:url(images/bg-mobile.svg)
+    no-repeat;
+      }
+
+h1{
+font-size: 1rem;
+}
+
+p{
+font-size: 0.7rem;
+}
+
+h1,
+p{
+margin:1rem auto;
+}
+
+  .container{
+      display:flex;
+      flex-direction: column;
+      margin:1rem auto;
+  }
+
+  .text{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+  }
+
+  .btn{
+    width: 124px;
+    margin:auto;
+  }
+
+  .bottom{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin:auto;
+  }
+
+  .fa-brands {
+    padding:0.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+  }
+
+}
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
